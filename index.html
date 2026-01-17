@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blender to Three.js glTF Viewer</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div>
+          <h1>glTF / GLB Viewer</h1>
+          <p class="sub">Upload a <code>.glb</code> or <code>.gltf</code> and inspect it with mouse controls.</p>
+        </div>
+        <div class="actions">
+          <label class="file">
+            <input id="fileInput" type="file" accept=".glb,.gltf,model/gltf-binary,model/gltf+json" />
+            <span>Upload model</span>
+          </label>
+          <button id="resetBtn" class="btn" type="button">Reset view</button>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="card">
+          <h2>Try sample models</h2>
+          <div class="samples">
+            <button id="samplePyramid" class="btn" type="button">Pink Pyramid</button>
+            <button id="sampleCone" class="btn" type="button">Orange Cone</button>
+            <button id="sampleCube" class="btn" type="button">Light Green Cube</button>
+          </div>
+          <p class="hint">
+            Controls: Left-drag rotate, right-drag pan, scroll wheel zoom. Drag and drop a file anywhere to load it.
+          </p>
+          <div id="status" class="status" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <main id="viewer" class="viewer" aria-label="3D viewer"></main>
+
+      <footer class="footer">
+        <span>Built with Three.js + TypeScript. Assets: <code>public/models</code></span>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

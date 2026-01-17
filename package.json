@@ -1,0 +1,20 @@
+{
+  "name": "blender-three-viewer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "generate:samples": "python tools/generate_glb.py"
+  },
+  "dependencies": {
+    "three": "^0.160.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.160.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}
