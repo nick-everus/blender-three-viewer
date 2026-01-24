@@ -1,77 +1,108 @@
-# Blender to Three.js glTF Viewer (TypeScript)
+# Blender to Three.js glTF Viewer
 
-Single-page Three.js viewer that:
+<p align="center">
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
+</p>
 
-- Prompts you to upload a **.glb** (binary glTF) or **.gltf** (JSON glTF)
-- Loads it with **GLTFLoader**
-- Gives you an interactive camera via **OrbitControls**
-- Includes **3 sample .glb files** under `public/models`
+<p align="center">
+  <em>A sleek single-page viewer for glTF/GLB 3D models exported from Blender</em>
+</p>
 
-## Demo features
+---
 
-- Upload via file picker
-- Drag-and-drop a file anywhere on the page
-- Click sample buttons (each sets the background color to match the sample)
-- Reset view to re-frame the current model
+## ✨ Features
 
-## Getting started
+| Feature | Description |
+|---------|-------------|
+| 📂 **File Upload** | Upload `.glb` or `.gltf` files via file picker |
+| 🖱️ **Drag & Drop** | Drop files anywhere on the page |
+| 🎨 **Sample Models** | Pre-loaded samples with matching background colors |
+| 🔄 **OrbitControls** | Interactive camera rotation, pan, and zoom |
+| 🎯 **Reset View** | Re-frame the current model with one click |
 
-### Prereqs
+---
 
-- Node.js 18+ (recommended)
+## 🚀 Getting Started
 
-### Install
+### Prerequisites
+
+> 📋 **Node.js 18+** recommended
+
+### Installation
 
 ```bash
 npm install
 ```
 
-### Run dev server
+### Development
 
 ```bash
 npm run dev
 ```
 
-Open the printed local URL (usually `http://localhost:5173`).
+🌐 Open the printed local URL (usually `http://localhost:5173`)
 
-### Build for production
+### Production Build
 
 ```bash
 npm run build
 ```
 
-The build output is in `dist/`.
+📦 Output is in `dist/`
 
-### Preview the production build
+### Preview Build
 
 ```bash
 npm run preview
 ```
 
-## Sample models
+---
 
-These are already included:
+## 🎲 Sample Models
 
-- `public/models/pink_pyramid.glb` (viewer background: purple)
-- `public/models/orange_cone.glb` (viewer background: red)
-- `public/models/light_green_cube.glb` (viewer background: dark green)
+Pre-included models to test the viewer:
 
-## Notes about `.gltf`
+| Model | File | Background |
+|-------|------|------------|
+| 🔺 Pink Pyramid | `public/models/pink_pyramid.glb` | ![#800080](https://via.placeholder.com/15/800080/800080?text=+) Purple |
+| 🔶 Orange Cone | `public/models/orange_cone.glb` | ![#FF0000](https://via.placeholder.com/15/FF0000/FF0000?text=+) Red |
+| 🟩 Green Cube | `public/models/light_green_cube.glb` | ![#006400](https://via.placeholder.com/15/006400/006400?text=+) Dark Green |
 
-If you upload a **.gltf** (JSON) instead of a **.glb**, make sure any referenced files (like `.bin` buffers and textures) are reachable relative to the `.gltf` file path when served. For quick sharing and portability, **.glb is usually easiest**.
+---
 
-## Optional: regenerate sample `.glb` files
+## 📝 Notes
 
-The repo includes a tiny generator script in Python (using `pygltflib`) that writes the sample `.glb` files.
+### About `.gltf` Files
+
+> ⚠️ If uploading a **.gltf** (JSON) instead of **.glb**, ensure any referenced files (`.bin` buffers, textures) are reachable relative to the `.gltf` path when served.
+>
+> 💡 **Tip:** For quick sharing and portability, **.glb is usually easiest**.
+
+---
+
+## 🔧 Optional: Regenerate Samples
+
+The repo includes a Python generator script (using `pygltflib`) for the sample `.glb` files:
 
 ```bash
 npm run generate:samples
 ```
 
-This writes the sample files to `public/models/`.
+📁 Writes to `public/models/`
 
 ---
 
-### License
+## 📄 License
 
-MIT (add/adjust as you prefer).
+<p>
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="MIT License" />
+</p>
+
+---
+
+<p align="center">
+  Made with ❤️ using Three.js
+</p>
