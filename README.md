@@ -25,6 +25,9 @@
 
 ---
 
+<img width="1052" height="741" alt="Screenshot 2026-02-01 at 13 20 09" src="https://github.com/user-attachments/assets/3e06216a-ef53-47ca-9984-5a12257c3bbb" />
+
+
 ## 🚀 Getting Started
 
 ### Prerequisites
